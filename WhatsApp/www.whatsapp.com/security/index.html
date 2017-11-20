@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en"    class="version-d platform-desktop" data-ng-app="securityApp" data-ng-controller="securityController">
+
+<!-- Mirrored from www.whatsapp.com/security/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 16 Nov 2017 16:04:51 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <title>{{securityPageTitle}}</title>
+
+        <script type="text/javascript" src="angular.min.js"></script>
+        <script type="text/javascript" src="security.js"></script>
+    
+    <meta property="og:title" content="WhatsApp Security"/>
+    <meta property="og:image" content="../../www-cdn.whatsapp.net/img/v4/whatsapp-promo56f7.png?v=7ab7fe1"/>
+    <meta property="og:site_name" content="WhatsApp.com"/>
+
+        <meta name="description" content="WhatsApp Messenger: More than 1 billion people in over 180 countries use WhatsApp to stay in touch with friends and family, anytime and anywhere. WhatsApp is free and offers simple, secure, reliable messaging and calling, available on phones all over the world.">
+    <meta property="og:description" content="WhatsApp Messenger: More than 1 billion people in over 180 countries use WhatsApp to stay in touch with friends and family, anytime and anywhere. WhatsApp is free and offers simple, secure, reliable messaging and calling, available on phones all over the world."/>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9">
+
+    <meta name="theme-color" content="#1BA691">
+    <meta name="msapplication-navbutton-color" content="#1BA691">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#1BA691">
+
+    <link id="favicon" rel="shortcut icon" href="../../whatsapp.com/favicon.png" type="image/png">
+
+    <meta name="google-site-verification" content="Cusl-1G4lInGd7xZ55vzhKEF4l3O11umoaqQ-RxTf2w" />
+
+        <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-8707243-1', {
+        'cookieName' : 'whatsapp_cookie',
+        'cookieDomain' : 'www.whatsapp.com',
+        'cookieExpires' : 60 * 60 * 24 * 365 * 2
+    });
+    ga('send', 'pageview');
+    // delete old cookies
+    document.cookie = '__utma=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+    document.cookie = '__utmc=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+    document.cookie = '__utmz=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+    </script>
+
+            <link rel="stylesheet" href="../../www-cdn.whatsapp.net/css/v4/style.build56f7.css?v=7ab7fe1">
+
+            <script type="text/javascript" src="../../www-cdn.whatsapp.net/js/v4/jquery-1.12.2.min.js"></script>
+
+
+<script type="text/javascript" charset="utf-8" src="../../www-cdn.whatsapp.net/img/v4/security/edge_includes/edge.6.0.0.min.js"></script>
+<style>
+    .edgeLoad-EDGE-108937483 { visibility:hidden; }
+</style>
+<script>
+    securityWord = 'Hello!';
+
+    var baseUrl = 'https://www-cdn.whatsapp.net/';
+    AdobeEdge.loadComposition('https://www-cdn.whatsapp.net/img/v4/security/security1', 'EDGE-108937483', {
+            scaleToFit: "both",
+            centerStage: "none",
+            minW: "0px",
+            maxW: "undefined",
+            width: "400px",
+            height: "400px",
+            bScaleToParent: true
+        }, {dom: [ ]}, {dom: [ ]});
+ </script>
+
+</head>
+<body class="page page--security" id="top">
+    <div class="header ">
+        <header class="page-header ">
+            <div class="page-header__inner">
+                <a class="page-header__logo" href="../index.html"></a>
+
+                <div class="page-header__title">
+                    <a href="index.html">{{whatsappLink}}<a/>
+                </div>
+
+                <div class="page-header__menu" onclick="toggle_menu()">
+
+                    <svg version="1.1" id="icon-menu" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="37px" height="37px" viewBox="0 0 37 37" style="enable-background:new 0 0 37 37;" xml:space="preserve">
+                    <path class="icon_white" d="M8,26h21v-1.8H8V26z M8,11v1.8h21V11H8z M8,19.2h21v-1.8H8V19.2z"/>
+                    </svg>
+
+                </div>
+
+                
+                <div class="page-header__language">
+                    
+<div id="lng" onclick="toggle_lng_menu()">
+
+            <svg version="1.1" id="icon-language" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+             y="0px" width="19px" height="19px" viewBox="0 0 19 19" style="enable-background:new 0 0 19 19;" xml:space="preserve">
+        <style type="text/css">
+            .icon_language_1{fill:#FFFFFF;}
+        </style>
+        <path class="icon_language_1" d="M9.5,2C5.4,2,2,5.4,2,9.5S5.4,17,9.5,17c4.1,0,7.5-3.4,7.5-7.5S13.6,2,9.5,2z M14.7,6.5h-2.2
+            c-0.2-1-0.6-1.8-1.1-2.7C12.8,4.3,14,5.2,14.7,6.5z M9.5,3.5c0.6,0.9,1.1,1.9,1.4,3H8.1C8.4,5.4,8.9,4.4,9.5,3.5z M3.7,11
+            c-0.2-0.5-0.2-1-0.2-1.5C3.5,9,3.5,8.4,3.7,8h2.6C6.2,8.5,6.2,9,6.2,9.5c0,0.5,0.1,1,0.1,1.5H3.7z M4.3,12.5h2.2
+            c0.2,1,0.6,1.8,1.1,2.7C6.2,14.7,5,13.8,4.3,12.5z M6.5,6.5H4.3c0.8-1.3,1.9-2.2,3.2-2.7C7.1,4.7,6.7,5.5,6.5,6.5z M9.5,15.5
+            c-0.6-0.9-1.1-1.9-1.4-3h2.9C10.6,13.6,10.1,14.6,9.5,15.5z M11.2,11H7.8c-0.1-0.5-0.2-1-0.2-1.5c0-0.5,0.1-1,0.2-1.5h3.5
+            c0.1,0.5,0.2,1,0.2,1.5C11.5,10,11.3,10.5,11.2,11z M11.5,15.2c0.5-0.8,0.8-1.7,1.1-2.7h2.2C14,13.8,12.8,14.7,11.5,15.2z M12.8,11
+            c0.1-0.5,0.1-1,0.1-1.5c0-0.5-0.1-1-0.1-1.5h2.6c0.2,0.5,0.2,1,0.2,1.5c0,0.5-0.1,1.1-0.2,1.5H12.8z"/>
+        </svg>
+
+        <span class="lng-id" dir="auto">en<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="lng-dropdown" x="0px" y="0px" width="9px" height="20px" viewBox="0 0 9 20" style="enable-background:new 0 0 9 20;" xml:space="preserve"><polygon fill="#ffffff" points="1,9 4.5,12.5 8,9 "/></svg>
+            </span>
+    </div>
+
+<div id="lng_open">
+    <div id="select" onclick="toggle_lng_menu()">
+        <span class="dropdown">&#9662;</span>
+        <span class="icon"></span>
+        {{lngOpenTxt}}  </div>
+    <div id="popular">
+        <li ><a class="lng-link" data-lng="az" href="indexf3e6.html?l=az" dir="auto">{{languages[0]}}</a></li><li ><a class="lng-link" data-lng="af" href="indexc4c5.html?l=af" dir="auto">{{languages[1]}}</a></li><li ><a class="lng-link" data-lng="id" href="indexe102.html?l=id" dir="auto">{{languages[2]}}</a></li><li ><a class="lng-link" data-lng="ms" href="index706d.html?l=ms" dir="auto">{{languages[3]}}</a></li><li ><a class="lng-link" data-lng="ca" href="indexb14c.html?l=ca" dir="auto">{{languages[4]}}</a></li><li ><a class="lng-link" data-lng="cs" href="index33ef.html?l=cs" dir="auto">{{languages[5]}}</a></li><li ><a class="lng-link" data-lng="da" href="index05eb.html?l=da" dir="auto">{{languages[6]}}</a></li><li ><a class="lng-link" data-lng="de" href="index8c8a.html?l=de" dir="auto">{{languages[7]}}</a></li><li ><a class="lng-link" data-lng="et" href="indexac65.html?l=et" dir="auto">{{languages[8]}}</a></li><li class="active"><a class="lng-link" data-lng="en" href="indexd8cc.html?l=en" dir="auto">{{languages[9]}}</a></li><li ><a class="lng-link" data-lng="es" href="indexb8c2.html?l=es" dir="auto">{{languages[10]}}</a></li><li ><a class="lng-link" data-lng="fr" href="index0ee9.html?l=fr" dir="auto">{{languages[11]}}</a></li><li ><a class="lng-link" data-lng="ga" href="index86eb.html?l=ga" dir="auto">{{languages[12]}}</a></li><li ><a class="lng-link" data-lng="hr" href="indexf0f2.html?l=hr" dir="auto">{{languages[13]}}</a></li><li ><a class="lng-link" data-lng="it" href="index1876.html?l=it" dir="auto">{{languages[14]}}</a></li><li ><a class="lng-link" data-lng="sw" href="index6034.html?l=sw" dir="auto">{{languages[15]}}</a></li><li ><a class="lng-link" data-lng="lv" href="index7158.html?l=lv" dir="auto">{{languages[16]}}</a></li><li ><a class="lng-link" data-lng="lt" href="indexa3df.html?l=lt" dir="auto">{{languages[17]}}</a></li><li ><a class="lng-link" data-lng="hu" href="index490c.html?l=hu" dir="auto">{{languages[18]}}</a></li><li ><a class="lng-link" data-lng="nl" href="index175d.html?l=nl" dir="auto">{{languages[19]}}</a></li><li ><a class="lng-link" data-lng="nb" href="index52c3.html?l=nb" dir="auto">{{languages[20]}}</a></li><li ><a class="lng-link" data-lng="uz" href="indexa2ce.html?l=uz" dir="auto">{{languages[21]}}</a></li><li ><a class="lng-link" data-lng="fil" href="index7d26.html?l=fil" dir="auto">{{languages[22]}}</a></li><li ><a class="lng-link" data-lng="pl" href="index1d17.html?l=pl" dir="auto">{{languages[23]}}</a></li><li ><a class="lng-link" data-lng="pt_br" href="index544b.html?l=pt_br" dir="auto">{{languages[24]}}</a></li><li ><a class="lng-link" data-lng="pt_pt" href="indexd28f.html?l=pt_pt" dir="auto">{{languages[25]}}</a></li><li ><a class="lng-link" data-lng="ro" href="index0dcd.html?l=ro" dir="auto">{{languages[26]}}</a></li><li ><a class="lng-link" data-lng="sq" href="indexcb69.html?l=sq" dir="auto">{{languages[27]}}</a></li><li ><a class="lng-link" data-lng="sk" href="index87a3.html?l=sk" dir="auto">{{languages[28]}}</a></li><li ><a class="lng-link" data-lng="sl" href="index362b.html?l=sl" dir="auto">{{languages[29]}}</a></li><li ><a class="lng-link" data-lng="fi" href="indexf022.html?l=fi" dir="auto">{{languages[30]}}</a></li><li ><a class="lng-link" data-lng="sv" href="index3837.html?l=sv" dir="auto">{{languages[31]}}</a></li><li ><a class="lng-link" data-lng="vi" href="index7ce2.html?l=vi" dir="auto">{{languages[32]}}</a></li><li ><a class="lng-link" data-lng="tr" href="index6d5f.html?l=tr" dir="auto">{{languages[33]}}</a></li><li ><a class="lng-link" data-lng="el" href="index0943.html?l=el" dir="auto">{{languages[34]}}</a></li><li ><a class="lng-link" data-lng="bg" href="indexa413.html?l=bg" dir="auto">{{languages[35]}}</a></li><li ><a class="lng-link" data-lng="kk" href="indexe82e.html?l=kk" dir="auto">{{languages[36]}}</a></li><li ><a class="lng-link" data-lng="mk" href="indexb4cf.html?l=mk" dir="auto">{{languages[37]}}</a></li><li ><a class="lng-link" data-lng="ru" href="index8580.html?l=ru" dir="auto">{{languages[38]}}</a></li><li ><a class="lng-link" data-lng="sr" href="index996b.html?l=sr" dir="auto">{{languages[39]}}</a></li><li ><a class="lng-link" data-lng="uk" href="index47f1.html?l=uk" dir="auto">{{languages[40]}}</a></li><li ><a class="lng-link" data-lng="he" href="index60db.html?l=he" dir="auto">‏{{languages[41]}}</a></li><li ><a class="lng-link" data-lng="ar" href="index57e5.html?l=ar" dir="auto">{{languages[42]}}</a></li><li ><a class="lng-link" data-lng="fa" href="indexcce4.html?l=fa" dir="auto">{{languages[43]}}</a></li><li ><a class="lng-link" data-lng="ur" href="index6302.html?l=ur" dir="auto">{{languages[44]}}</a></li><li ><a class="lng-link" data-lng="bn" href="indexfd20.html?l=bn" dir="auto">{{languages[45]}}</a></li><li ><a class="lng-link" data-lng="hi" href="index0873.html?l=hi" dir="auto">{{languages[46]}}</a></li><li ><a class="lng-link" data-lng="gu" href="indexb7cf.html?l=gu" dir="auto">{{languages[47]}}</a></li><li ><a class="lng-link" data-lng="kn" href="index6a4e.html?l=kn" dir="auto">{{languages[48]}}</a></li><li ><a class="lng-link" data-lng="mr" href="indexb280.html?l=mr" dir="auto">{{languages[49]}}</a></li><li ><a class="lng-link" data-lng="ta" href="index2fc9.html?l=ta" dir="auto">{{languages[50]}}</a></li><li ><a class="lng-link" data-lng="te" href="index522e.html?l=te" dir="auto">{{languages[51]}}</a></li><li ><a class="lng-link" data-lng="ml" href="index2518.html?l=ml" dir="auto">{{languages[52]}}</a></li><li ><a class="lng-link" data-lng="th" href="index04a4.html?l=th" dir="auto">{{languages[53]}}</a></li><li ><a class="lng-link" data-lng="zh_cn" href="indexa3e4.html?l=zh_cn" dir="auto">{{languages[54]}}</a></li><li ><a class="lng-link" data-lng="zh_tw" href="index6503.html?l=zh_tw" dir="auto">{{languages[55]}}</a></li><li ><a class="lng-link" data-lng="ja" href="index4356.html?l=ja" dir="auto">{{languages[56]}}</a></li><li ><a class="lng-link" data-lng="ko" href="indexe743.html?l=ko" dir="auto">{{languages[57]}}</a></li>       <div class="clear"></div>
+    </div>
+        <div id="helptranslate">
+        <li><a href="https://translate.whatsapp.com/" target="_blank">{{helpTranslate}}</a></li>
+        <div class="clear"></div>
+    </div>
+
+</div>                </div>
+
+                <nav class="page-header__nav">
+                    <ul class="sitenav">
+                                                    <li class="sitenav-item">
+                                <a href="https://web.whatsapp.com/">
+                                    {{siteNav[0]}}                                </a>
+                            </li>
+                                                    <li class="sitenav-item">
+                                <a href="features/index.html">
+                                    {{siteNav[1]}}                                </a>
+                            </li>
+                                                    <li class="sitenav-item">
+                                <a href="download/index.html">
+                                    {{siteNav[2]}}                                </a>
+                            </li>
+                                                    <li class="sitenav-item">
+                                <a href="security/index.html">
+                                    {{siteNav[3]}}                                </a>
+                            </li>
+                                                    <li class="sitenav-item">
+                                <a href="https://faq.whatsapp.com/">
+                                    {{siteNav[4]}}                                </a>
+                            </li>
+                                            </ul>
+                </nav>
+            </div>
+
+            <nav class="page-header__drawer drawer">
+                <div class="drawer__inner">
+                    <div class="drawer__close" onclick="toggle_menu()">
+
+                        <svg version="1.1" id="icon-close" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             width="37px" height="37px" viewBox="0 0 37 37" style="enable-background:new 0 0 37 37;" xml:space="preserve">
+                        <polygon class="icon_white" points="26.7,11.6 25.4,10.3 18.5,17.2 11.6,10.3 10.3,11.6 17.2,18.5 10.3,25.4 11.6,26.7 18.5,19.8
+                            25.4,26.7 26.7,25.4 19.8,18.5 "/>
+                        </svg>
+
+                    </div>
+
+                    <div class="drawer__icon">
+                        <svg version="1.1" id="whatsapp-logo-notext" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                             x="0px" y="0px" width="39px" height="39px" viewBox="0 0 39 39" style="enable-background:new 0 0 39 39;" xml:space="preserve">
+                        <style type="text/css">
+                            .logo_white{fill:#FFFFFF;}
+                            .logo_green{fill:#00E676;}
+                        </style>
+                        <path class="logo_green" d="M10.7,32.8l0.6,0.3c2.5,1.5,5.3,2.2,8.1,2.2l0,0c8.8,0,16-7.2,16-16c0-4.2-1.7-8.3-4.7-11.3
+                            s-7-4.7-11.3-4.7c-8.8,0-16,7.2-15.9,16.1c0,3,0.9,5.9,2.4,8.4l0.4,0.6l-1.6,5.9L10.7,32.8z"/>
+                        <path class="logo_white" d="M32.4,6.4C29,2.9,24.3,1,19.5,1C9.3,1,1.1,9.3,1.2,19.4c0,3.2,0.9,6.3,2.4,9.1L1,38l9.7-2.5
+                            c2.7,1.5,5.7,2.2,8.7,2.2l0,0c10.1,0,18.3-8.3,18.3-18.4C37.7,14.4,35.8,9.8,32.4,6.4z M19.5,34.6L19.5,34.6c-2.7,0-5.4-0.7-7.7-2.1
+                            l-0.6-0.3l-5.8,1.5L6.9,28l-0.4-0.6c-4.4-7.1-2.3-16.5,4.9-20.9s16.5-2.3,20.9,4.9s2.3,16.5-4.9,20.9C25.1,33.8,22.3,34.6,19.5,34.6
+                            z M28.3,23.5L27.2,23c0,0-1.6-0.7-2.6-1.2c-0.1,0-0.2-0.1-0.3-0.1c-0.3,0-0.5,0.1-0.7,0.2l0,0c0,0-0.1,0.1-1.5,1.7
+                            c-0.1,0.2-0.3,0.3-0.5,0.3h-0.1c-0.1,0-0.3-0.1-0.4-0.2l-0.5-0.2l0,0c-1.1-0.5-2.1-1.1-2.9-1.9c-0.2-0.2-0.5-0.4-0.7-0.6
+                            c-0.7-0.7-1.4-1.5-1.9-2.4L15,18.4c-0.1-0.1-0.1-0.2-0.2-0.4c0-0.2,0-0.4,0.1-0.5c0,0,0.4-0.5,0.7-0.8c0.2-0.2,0.3-0.5,0.5-0.7
+                            c0.2-0.3,0.3-0.7,0.2-1c-0.1-0.5-1.3-3.2-1.6-3.8c-0.2-0.3-0.4-0.4-0.7-0.5h-0.3c-0.2,0-0.5,0-0.8,0c-0.2,0-0.4,0.1-0.6,0.1
+                            l-0.1,0.1c-0.2,0.1-0.4,0.3-0.6,0.4c-0.2,0.2-0.3,0.4-0.5,0.6c-0.7,0.9-1.1,2-1.1,3.1l0,0c0,0.8,0.2,1.6,0.5,2.3l0.1,0.3
+                            c0.9,1.9,2.1,3.6,3.7,5.1l0.4,0.4c0.3,0.3,0.6,0.5,0.8,0.8c2.1,1.8,4.5,3.1,7.2,3.8c0.3,0.1,0.7,0.1,1,0.2l0,0c0.3,0,0.7,0,1,0
+                            c0.5,0,1.1-0.2,1.5-0.4c0.3-0.2,0.5-0.2,0.7-0.4l0.2-0.2c0.2-0.2,0.4-0.3,0.6-0.5s0.4-0.4,0.5-0.6c0.2-0.4,0.3-0.9,0.4-1.4
+                            c0-0.2,0-0.5,0-0.7C28.6,23.7,28.5,23.6,28.3,23.5z"/>
+                        </svg>
+                    </div>
+
+                    <ul class="menu menu--drawer">
+                                                    <li class="menu__item">
+                                <a href="download/index.html" class="menu__link">
+                                    {{siteNav[2]}}                                </a>
+                            </li>
+                                                    <li class="menu__item">
+                                <a href="features/index.html" class="menu__link">
+                                    {{siteNav[1]}}                                </a>
+                            </li>
+                                                    <li class="menu__item">
+                                <a href="security/index.html" class="menu__link">
+                                    {{siteNav[3]}}                                </a>
+                            </li>
+                                                    <li class="menu__item">
+                                <a href="https://faq.whatsapp.com/" class="menu__link">
+                                    {{siteNav[4]}}                                </a>
+                            </li>
+                                                    <li class="menu__item">
+                                <a href="contact/index.html" class="menu__link">
+                                    {{companyFooterList[3]}}                                </a>
+                            </li>
+                                                <li class="menu__item menu__item--language">
+                                                        <select onchange="window.location = this.options[this.selectedIndex].value;"><option  value="?l=az">{{languages[0]}}</option><option  value="?l=af">{{languages[1]}}</option><option  value="?l=id">{{languages[2]}}</option><option  value="?l=ms">{{languages[3]}}</option><option  value="?l=ca">{{languages[4]}}</option><option  value="?l=cs">{{languages[5]}}</option><option  value="?l=da">{{languages[6]}}</option><option  value="?l=de">{{languages[7]}}</option><option  value="?l=et">{{languages[8]}}</option><option selected="selected" value="?l=en">{{languages[9]}}</option><option  value="?l=es">{{languages[10]}}</option><option  value="?l=fr">{{languages[11]}}</option><option  value="?l=ga">{{languages[12]}}</option><option  value="?l=hr">{{languages[13]}}</option><option  value="?l=it">{{languages[14]}}</option><option  value="?l=sw">{{languages[15]}}</option><option  value="?l=lv">{{languages[16]}}</option><option  value="?l=lt">{{languages[17]}}</option><option  value="?l=hu">{{languages[18]}}</option><option  value="?l=nl">{{languages[19]}}</option><option  value="?l=nb">{{languages[20]}}</option><option  value="?l=uz">{{languages[21]}}</option><option  value="?l=fil">{{languages[22]}}</option><option  value="?l=pl">{{languages[23]}}</option><option  value="?l=pt_br">{{languages[24]}}</option><option  value="?l=pt_pt">{{languages[25]}}</option><option  value="?l=ro">{{languages[26]}}</option><option  value="?l=sq">{{languages[27]}}</option><option  value="?l=sk">{{languages[28]}}</option><option  value="?l=sl">{{languages[29]}}</option><option  value="?l=fi">{{languages[30]}}</option><option  value="?l=sv">{{languages[31]}}</option><option  value="?l=vi">{{languages[32]}}</option><option  value="?l=tr">{{languages[33]}}</option><option  value="?l=el">{{languages[34]}}</option><option  value="?l=bg">{{languages[35]}}</option><option  value="?l=kk">{{languages[36]}}</option><option  value="?l=mk">{{languages[37]}}</option><option  value="?l=ru">{{languages[38]}}</option><option  value="?l=sr">{{languages[39]}}</option><option  value="?l=uk">{{languages[40]}}</option><option  value="?l=he">{{languages[41]}}</option><option  value="?l=ar">{{languages[42]}}</option><option  value="?l=fa">{{languages[43]}}</option><option  value="?l=ur">{{languages[44]}}</option><option  value="?l=bn">{{languages[45]}} </option><option  value="?l=hi">{{languages[46]}}</option><option  value="?l=gu">{{languages[47]}}</option><option  value="?l=kn">{{languages[48]}}</option><option  value="?l=mr">{{languages[49]}}</option><option  value="?l=ta">{{languages[50]}}</option><option  value="?l=te">{{languages[51]}}</option><option  value="?l=ml">{{languages[52]}}</option><option  value="?l=th">{{languages[53]}}</option><option  value="?l=zh_cn">{{languages[54]}}</option><option  value="?l=zh_tw">{{languages[55]}}</option><option  value="?l=ja">{{languages[56]}}</option><option  value="?l=ko">{{languages[57]}}</option></select>                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+
+        </header>
+    </div>
+
+    <div class="page-subheader page-subheader--security">
+        <div class="page-subheader__inner">
+            <div class="page-subheader__container">
+                
+<h1>{{securityPageTitle}}</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-main">
+        <div class="page-main__inner">
+            <div class="page-content page-content--single">
+
+                <div class="block block--blurb">
+                    <div class="block__title">
+                        
+<h1>{{blurb.title}}</h1>
+                    </div>
+                    <div class="block__body">
+                        
+<p>{{blurb.text1}} <a href="http://www.ndtv.com/tamil-nadu-news/chennai-floods-ndrf-uses-social-media-to-reach-out-to-people-1251104">{{blurb.link1}}</a>{{blurb.text2}} <a href="http://time.com/4272666/refugees-stories-whatsapp/">{{blurb.link2}}</a>{{blurb.text3}} <a href="http://www.buzzfeed.com/rossalynwarren/a-syrian-refugee-used-whatsapp-to-share-his-journey-through">{{blurb.link3}}</a>{{blurb.text4}}</p>
+                    </div>
+                </div>
+
+                <div class="row l--security-1 row--security">
+                    <div class="row__inner">
+                        <div class="row__item img img--security" dir="ltr">
+                            <div class="img__inner">
+                                <!-- EDGE Animation -->
+                                <div id="Stage" class="EDGE-108937483"></div>
+                                <!-- / EDGE Animation -->
+                            </div>
+                        </div>
+                        <div class="row__item block block--default">
+                            <div class="block__title">
+                                
+<h2>{{default.title}}</h2>
+                            </div>
+                            <div class="block__body">
+                                
+<p>{{default.text}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row row--underlined row--2narrow">
+                    <div class="row__inner">
+                        <div class="row__item block block--icon">
+                            <div class="block__img icon-shield"></div>
+                            <div class="block__title">
+                                
+<h3>{{narrow.title1}}</h3>
+                            </div>
+                            <div class="block__body">
+                                
+<p>{{narrow.body1}}</p>
+                            </div>
+                        </div>
+                        <div class="row__item block block--icon">
+                            <div class="block__img icon-message"></div>
+                            <div class="block__title">
+                                
+<h3>{{narrow.title2}}</h3>
+                            </div>
+                            <div class="block__body">
+                                
+<p>{{narrow.body2}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row row--underlined row--2narrow">
+                    <div class="row__inner">
+                        <div class="row__item block block--icon">
+                            <div class="block__img icon-lock"></div>
+                            <div class="block__title">
+                                
+<h3>{{narrow.title3}}</h3>
+                            </div>
+                            <div class="block__body">
+                                
+<p>{{narrow.body3}}</p>
+                            </div>
+                        </div>
+                        <div class="row__item block block--icon">
+                            <div class="block__img icon-read"></div>
+                            <div class="block__title">
+                                
+<h3>{{narrow.title4}}</h3>
+                            </div>
+                            <div class="block__body">
+                                
+<p>{{narrow.bodyp}} <a href="WhatsApp-Security-Whitepaper.pdf">{{narrow.bodya}}</a> {{narrow.bodytext}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+<footer class="page-footer-container">
+    <div class="page-footer -primary">
+        <div class="page-footer__inner">
+
+            <div class="four -spaced">
+                                    <div class="block block--footer four__item">
+                        <h4 class="block__title">{{whatsappFooterListTitle|uppercase}}</h4>
+                        <div class="block__body">
+                            <ul class="list list--footer">
+                                                                    <li class="list__item">
+                                                                                    <a href="features/index.html" class="list__link">
+                                                {{whatsappFooterList[0]}}                                            </a>
+                                                                            </li>
+                                                                    <li class="list__item">
+                                                                                    <a href="security/index.html" class="list__link">
+                                                {{whatsappFooterList[1]}}                                            </a>
+                                                                            </li>
+                                                                    <li class="list__item">
+                                                                                    <a href="download/index.html" class="list__link">
+                                                {{whatsappFooterList[2]}}                                            </a>
+                                                                            </li>
+                                                                    <li class="list__item">
+                                                                                    <a href="https://web.whatsapp.com/" class="list__link">
+                                                {{whatsappFooterList[3]}}                                            </a>
+                                                                            </li>
+                                                                    <li class="list__item">
+                                                                                    <span class="list__empty"></span>
+                                                                            </li>
+                                                            </ul>
+                        </div>
+                    </div>
+                                    <div class="block block--footer four__item">
+                        <h4 class="block__title">{{companyFooterListTitle|uppercase}}</h4>
+                        <div class="block__body">
+                            <ul class="list list--footer">
+                                                                    <li class="list__item">
+                                                                                    <a href="about/index.html" class="list__link">
+                                                {{companyFooterList[0]}}                                            </a>
+                                                                            </li>
+                                                                    <li class="list__item">
+                                                                                    <a href="join/index.html" class="list__link">
+                                                {{companyFooterList[1]}}                                            </a>
+                                                                            </li>
+                                                                    <li class="list__item">
+                                                                                    <a href="https://www.whatsappbrand.com/" class="list__link">
+                                                {{companyFooterList[2]}}                                            </a>
+                                                                            </li>
+                                                                    <li class="list__item">
+                                                                                    <a href="contact/index.html" class="list__link">
+                                                {{companyFooterList[3]}}                                            </a>
+                                                                            </li>
+                                                                    <li class="list__item">
+                                                                                    <a href="https://blog.whatsapp.com/" class="list__link">
+                                                {{companyFooterList[4]}}                                            </a>
+                                                                            </li>
+                                                                    <li class="list__item">
+                                                                                    <span class="list__empty"></span>
+                                                                            </li>
+                                                                    <li class="list__item">
+                                                                                    <span class="list__empty"></span>
+                                                                            </li>
+                                                            </ul>
+                        </div>
+                    </div>
+                                    <div class="block block--footer four__item">
+                        <h4 class="block__title">{{downloadFooterListTitle|uppercase}}</h4>
+                        <div class="block__body">
+                            <ul class="list list--footer">
+                                                                    <li class="list__item">
+                                                                                    <a href="download/index.html" class="list__link">
+                                                {{downloadFooterList[0]}}                                            </a>
+                                                                            </li>
+                                                                    <li class="list__item">
+                                                                                    <a href="android/index.html" class="list__link">
+                                                {{downloadFooterList[1]}}                                            </a>
+                                                                            </li>
+                                                                    <li class="list__item">
+                                                                                    <a href="appstore/index.html" class="list__link">
+                                                {{downloadFooterList[2]}}                                            </a>
+                                                                            </li>
+                                                                    <li class="list__item">
+                                                                                    <a href="wp/index.html" class="list__link">
+                                                {{downloadFooterList[3]}}                                            </a>
+                                                                            </li>
+                                                                    <li class="list__item">
+                                                                                    <a href="ota/index.html" class="list__link">
+                                                {{downloadFooterList[4]}}                                            </a>
+                                                                            </li>
+                                                                    <li class="list__item">
+                                                                                    <a href="nokia/index.html" class="list__link">
+                                                {{downloadFooterList[5]}}                                            </a>
+                                                                            </li>
+                                                            </ul>
+                        </div>
+                    </div>
+                                    <div class="block block--footer four__item">
+                        <h4 class="block__title">{{helpFooterListTitle|uppercase}}</h4>
+                        <div class="block__body">
+                            <ul class="list list--footer">
+                                                                    <li class="list__item">
+                                                                                    <a href="https://faq.whatsapp.com/" class="list__link">
+                                                {{helpFooterList[0]}}                                            </a>
+                                                                            </li>
+                                                                    <li class="list__item">
+                                                                                    <a href="https://twitter.com/whatsapp" class="list__link">
+                                                {{helpFooterList[1]}}                                            </a>
+                                                                            </li>
+                                                                    <li class="list__item">
+                                                                                    <a href="https://www.facebook.com/WhatsApp" class="list__link">
+                                                {{helpFooterList[2]}}                                            </a>
+                                                                            </li>
+                                                                    <li class="list__item">
+                                                                                    <span class="list__empty"></span>
+                                                                            </li>
+                                                                    <li class="list__item">
+                                                                                    <span class="list__empty"></span>
+                                                                            </li>
+                                                                    <li class="list__item">
+                                                                                    <span class="list__empty"></span>
+                                                                            </li>
+                                                            </ul>
+                        </div>
+                    </div>
+                            </div>
+        </div>
+    </div>
+    <div class="page-footer -secondary">
+        <div class="page-footer__inner">
+            <div class="four">
+                <div class="four__item" dir="auto">
+                    {{footer}}
+                </div>
+                <div class="four__item -span3">
+                    <a href="legal/index.html" class="page-footer__link">{{privacyLink}}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    var open = false;
+    var speed = 200;
+    function toggle_lng_menu() {
+        if(open) {
+            $('#lng_open').slideUp(speed);
+            $('.header').removeClass('is-expanded');
+        } else {
+            $('#lng_open').slideDown(speed);
+            $('.header').addClass('is-expanded');
+        }
+        open = !open;
+    }
+
+    function toggle_menu() {
+        $('.page-header__drawer').toggleClass('is-visible');
+    }
+
+    function toggle_search() {
+        $('.page-subheader--search').slideToggle();
+    }
+
+    $(function() {
+                    $(window).scroll(function(e) {
+                  if ($('body').scrollTop() > 0) {
+                $('.header').addClass("fixed");
+              } else {
+                $('.header').removeClass("fixed");
+              }
+            });
+            })
+</script>
+
+
+</body>
+
+<!-- Mirrored from www.whatsapp.com/security/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 16 Nov 2017 16:04:51 GMT -->
+</html>
