@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"    class="version-d platform-desktop" data-ng-app="homeApp" data-ng-controller="homeController"
+<html lang="en"    class="version-d platform-desktop" ng-app="homeApp" ng-controller="homeController">
 <!-- Mirrored from www.whatsapp.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 16 Nov 2017 16:04:40 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head>
@@ -8,6 +8,7 @@
 
         <script type="text/javascript" src="./angular.min.js"></script>
         <script type="text/javascript" src="./index.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-animate.js"></script>
     
     <meta property="og:title" content="WhatsApp"/>
     <meta property="og:image" content="../www-cdn.whatsapp.net/img/v4/whatsapp-promo56f7.png?v=7ab7fe1"/>
@@ -72,7 +73,7 @@
                 
                 <div class="page-header__language">
                     
-<div id="lng" onclick="toggle_lng_menu()">
+<div id="lng" ng-click="toggle_lng_menu()">
 
             <svg version="1.1" id="icon-language" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
              y="0px" width="19px" height="19px" viewBox="0 0 19 19" style="enable-background:new 0 0 19 19;" xml:space="preserve">
@@ -92,8 +93,8 @@
             </span>
     </div>
 
-<div id="lng_open">
-	<div id="select" onclick="toggle_lng_menu()">
+<div id="lng_open" >
+	<div id="select" ng-click="toggle_lng_menu()">
 		<span class="dropdown">&#9662;</span>
 		<span class="icon"></span>
 		{{lngOpenTxt}}	</div>
@@ -427,7 +428,7 @@
 <script>
     var open = false;
     var speed = 200;
-    function toggle_lng_menu() {
+    /*function toggle_lng_menu() {
         if(open) {
             $('#lng_open').slideUp(speed);
             $('.header').removeClass('is-expanded');
@@ -436,7 +437,7 @@
             $('.header').addClass('is-expanded');
         }
         open = !open;
-    }
+    }*/
 
     function toggle_menu() {
         $('.page-header__drawer').toggleClass('is-visible');

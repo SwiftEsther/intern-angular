@@ -1,4 +1,4 @@
-angular.module("homeApp", [])
+angular.module("homeApp", ['ngAnimate'])
 .controller("homeController", function($scope) {
 	$scope.homeTitle="WhatsApp";
 	$scope.whatsappLink="WhatsApp";
@@ -54,5 +54,9 @@ angular.module("homeApp", [])
 	$scope.helpFooterList=["FAQ","Twitter","Facebook"];
 	$scope.footer="2017 © WhatsApp Inc.";
 	$scope.privacyLink="Privacy & Terms";
-	});
 
+$scope.open = false;
+    $scope.toggle_lng_menu() = function() {
+        $scope.open = !$scope.open;
+    };
+	});
