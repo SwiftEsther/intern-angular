@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"    class="version-d platform-desktop" ng-app="homeApp" ng-controller="homeController">
+<html lang="en"    class="version-d platform-desktop" ng-app="homeApp" ng-controller="homeController" ng-cloak>
 <!-- Mirrored from www.whatsapp.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 16 Nov 2017 16:04:40 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head>
@@ -34,7 +34,6 @@
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','../www.google-analytics.com/analytics.js','ga');
-
     ga('create', 'UA-8707243-1', {
         'cookieName' : 'whatsapp_cookie',
         'cookieDomain' : 'www.whatsapp.com',
@@ -53,8 +52,8 @@
 
 </head>
 <body class="page page--index" id="top">
-    <div class="header page-header--index">
-        <header class="page-header page-header--index">
+    <div class="header page-header--index" ng-class="{isExpanded:show}">
+        <header class="page-header pageHeader--index">
             <div class="page-header__inner">
                 <a class="page-header__logo" href="index.html"></a>
 
@@ -93,18 +92,18 @@
             </span>
     </div>
 
-<div id="lng_open" >
-	<div id="select" ng-click="toggle_lng_menu()">
-		<span class="dropdown">&#9662;</span>
-		<span class="icon"></span>
-		{{lngOpenTxt}}	</div>
-	<div id="popular">
-		<li ><a class="lng-link" data-lng="az" href="indexf3e6.html?l=az" dir="auto">{{languages[0]}}</a></li><li ><a class="lng-link" data-lng="af" href="indexc4c5.html?l=af" dir="auto">{{languages[1]}}</a></li><li ><a class="lng-link" data-lng="id" href="indexe102.html?l=id" dir="auto">{{languages[2]}}</a></li><li ><a class="lng-link" data-lng="ms" href="index706d.html?l=ms" dir="auto">{{languages[3]}}</a></li><li ><a class="lng-link" data-lng="ca" href="indexb14c.html?l=ca" dir="auto">{{languages[4]}}</a></li><li ><a class="lng-link" data-lng="cs" href="index33ef.html?l=cs" dir="auto">{{languages[5]}}</a></li><li ><a class="lng-link" data-lng="da" href="index05eb.html?l=da" dir="auto">{{languages[6]}}</a></li><li ><a class="lng-link" data-lng="de" href="index8c8a.html?l=de" dir="auto">{{languages[7]}}</a></li><li ><a class="lng-link" data-lng="et" href="indexac65.html?l=et" dir="auto">{{languages[8]}}</a></li><li class="active"><a class="lng-link" data-lng="en" href="indexd8cc.html?l=en" dir="auto">{{languages[9]}}</a></li><li ><a class="lng-link" data-lng="es" href="indexb8c2.html?l=es" dir="auto">{{languages[10]}}</a></li><li ><a class="lng-link" data-lng="fr" href="index0ee9.html?l=fr" dir="auto">{{languages[11]}}</a></li><li ><a class="lng-link" data-lng="ga" href="index86eb.html?l=ga" dir="auto">{{languages[12]}}</a></li><li ><a class="lng-link" data-lng="hr" href="indexf0f2.html?l=hr" dir="auto">{{languages[13]}}</a></li><li ><a class="lng-link" data-lng="it" href="index1876.html?l=it" dir="auto">{{languages[14]}}</a></li><li ><a class="lng-link" data-lng="sw" href="index6034.html?l=sw" dir="auto">{{languages[15]}}</a></li><li ><a class="lng-link" data-lng="lv" href="index7158.html?l=lv" dir="auto">{{languages[16]}}</a></li><li ><a class="lng-link" data-lng="lt" href="indexa3df.html?l=lt" dir="auto">{{languages[17]}}</a></li><li ><a class="lng-link" data-lng="hu" href="index490c.html?l=hu" dir="auto">{{languages[18]}}</a></li><li ><a class="lng-link" data-lng="nl" href="index175d.html?l=nl" dir="auto">{{languages[19]}}</a></li><li ><a class="lng-link" data-lng="nb" href="index52c3.html?l=nb" dir="auto">{{languages[20]}}</a></li><li ><a class="lng-link" data-lng="uz" href="indexa2ce.html?l=uz" dir="auto">{{languages[21]}}</a></li><li ><a class="lng-link" data-lng="fil" href="index7d26.html?l=fil" dir="auto">{{languages[22]}}</a></li><li ><a class="lng-link" data-lng="pl" href="index1d17.html?l=pl" dir="auto">{{languages[23]}}</a></li><li ><a class="lng-link" data-lng="pt_br" href="index544b.html?l=pt_br" dir="auto">{{languages[24]}}</a></li><li ><a class="lng-link" data-lng="pt_pt" href="indexd28f.html?l=pt_pt" dir="auto">{{languages[25]}}</a></li><li ><a class="lng-link" data-lng="ro" href="index0dcd.html?l=ro" dir="auto">{{languages[26]}}</a></li><li ><a class="lng-link" data-lng="sq" href="indexcb69.html?l=sq" dir="auto">{{languages[27]}}</a></li><li ><a class="lng-link" data-lng="sk" href="index87a3.html?l=sk" dir="auto">{{languages[28]}}</a></li><li ><a class="lng-link" data-lng="sl" href="index362b.html?l=sl" dir="auto">{{languages[29]}}</a></li><li ><a class="lng-link" data-lng="fi" href="indexf022.html?l=fi" dir="auto">{{languages[30]}}</a></li><li ><a class="lng-link" data-lng="sv" href="index3837.html?l=sv" dir="auto">{{languages[31]}}</a></li><li ><a class="lng-link" data-lng="vi" href="index7ce2.html?l=vi" dir="auto">{{languages[32]}}</a></li><li ><a class="lng-link" data-lng="tr" href="index6d5f.html?l=tr" dir="auto">{{languages[33]}}</a></li><li ><a class="lng-link" data-lng="el" href="index0943.html?l=el" dir="auto">{{languages[34]}}</a></li><li ><a class="lng-link" data-lng="bg" href="indexa413.html?l=bg" dir="auto">{{languages[35]}}</a></li><li ><a class="lng-link" data-lng="kk" href="indexe82e.html?l=kk" dir="auto">{{languages[36]}}</a></li><li ><a class="lng-link" data-lng="mk" href="indexb4cf.html?l=mk" dir="auto">{{languages[37]}}</a></li><li ><a class="lng-link" data-lng="ru" href="index8580.html?l=ru" dir="auto">{{languages[38]}}</a></li><li ><a class="lng-link" data-lng="sr" href="index996b.html?l=sr" dir="auto">{{languages[39]}}</a></li><li ><a class="lng-link" data-lng="uk" href="index47f1.html?l=uk" dir="auto">{{languages[40]}}</a></li><li ><a class="lng-link" data-lng="he" href="index60db.html?l=he" dir="auto">‏{{languages[41]}}</a></li><li ><a class="lng-link" data-lng="ar" href="index57e5.html?l=ar" dir="auto">{{languages[42]}}</a></li><li ><a class="lng-link" data-lng="fa" href="indexcce4.html?l=fa" dir="auto">{{languages[43]}}</a></li><li ><a class="lng-link" data-lng="ur" href="index6302.html?l=ur" dir="auto">{{languages[44]}}</a></li><li ><a class="lng-link" data-lng="bn" href="indexfd20.html?l=bn" dir="auto">{{languages[45]}}</a></li><li ><a class="lng-link" data-lng="hi" href="index0873.html?l=hi" dir="auto">{{languages[46]}}</a></li><li ><a class="lng-link" data-lng="gu" href="indexb7cf.html?l=gu" dir="auto">{{languages[47]}}</a></li><li ><a class="lng-link" data-lng="kn" href="index6a4e.html?l=kn" dir="auto">{{languages[48]}}</a></li><li ><a class="lng-link" data-lng="mr" href="indexb280.html?l=mr" dir="auto">{{languages[49]}}</a></li><li ><a class="lng-link" data-lng="ta" href="index2fc9.html?l=ta" dir="auto">{{languages[50]}}</a></li><li ><a class="lng-link" data-lng="te" href="index522e.html?l=te" dir="auto">{{languages[51]}}</a></li><li ><a class="lng-link" data-lng="ml" href="index2518.html?l=ml" dir="auto">{{languages[52]}}</a></li><li ><a class="lng-link" data-lng="th" href="index04a4.html?l=th" dir="auto">{{languages[53]}}</a></li><li ><a class="lng-link" data-lng="zh_cn" href="indexa3e4.html?l=zh_cn" dir="auto">{{languages[54]}}</a></li><li ><a class="lng-link" data-lng="zh_tw" href="index6503.html?l=zh_tw" dir="auto">{{languages[55]}}</a></li><li ><a class="lng-link" data-lng="ja" href="index4356.html?l=ja" dir="auto">{{languages[56]}}</a></li><li ><a class="lng-link" data-lng="ko" href="indexe743.html?l=ko" dir="auto">{{languages[57]}}</a></li>		<div class="clear"></div>
-	</div>
-		<div id="helptranslate">
-		<li><a href="https://translate.whatsapp.com/" target="_blank">{{helpTranslate}}</a></li>
-		<div class="clear"></div>
-	</div>
+<div id="lng_open" ng-show="show">
+    <div id="select"  >
+        <span class="dropdown">&#9662;</span>
+        <span class="icon" ></span>
+        {{lngOpenTxt}}  </div>
+    <div id="popular" >
+        <li ng-repeat="language in languages" ng-class="{active: language.dataLng==='en'}"><a class="lng-link" ng-model="myLanguage" data-lng="{{language.dataLng}}" href="{{language.href}}" dir="auto">{{language.language}}</a></li>       <div class="clear"></div>
+    </div>
+        <div id="helptranslate">
+        <li><a href="https://translate.whatsapp.com/" target="_blank">{{helpTranslate}}</a></li>
+        <div class="clear"></div>
+    </div>
 
 </div>                </div>
 
@@ -190,8 +189,9 @@
                                 <a href="contact/index.html" class="menu__link">
                                     {{companyFooterList[3]}}                                </a>
                             </li>
-                                                <li class="menu__item menu__item--language">
-                                                        <select onchange="window.location = this.options[this.selectedIndex].value;"><option  value="?l=az">{{languages[0]}}</option><option  value="?l=af">{{languages[1]}}</option><option  value="?l=id">{{languages[2]}}</option><option  value="?l=ms">{{languages[3]}}</option><option  value="?l=ca">{{languages[4]}}</option><option  value="?l=cs">{{languages[5]}}</option><option  value="?l=da">{{languages[6]}}</option><option  value="?l=de">{{languages[7]}}</option><option  value="?l=et">{{languages[8]}}</option><option selected="selected" value="?l=en">{{languages[9]}}</option><option  value="?l=es">{{languages[10]}}</option><option  value="?l=fr">{{languages[11]}}</option><option  value="?l=ga">{{languages[12]}}</option><option  value="?l=hr">{{languages[13]}}</option><option  value="?l=it">{{languages[14]}}</option><option  value="?l=sw">{{languages[15]}}</option><option  value="?l=lv">{{languages[16]}}</option><option  value="?l=lt">{{languages[17]}}</option><option  value="?l=hu">{{languages[18]}}</option><option  value="?l=nl">{{languages[19]}}</option><option  value="?l=nb">{{languages[20]}}</option><option  value="?l=uz">{{languages[21]}}</option><option  value="?l=fil">{{languages[22]}}</option><option  value="?l=pl">{{languages[23]}}</option><option  value="?l=pt_br">{{languages[24]}}</option><option  value="?l=pt_pt">{{languages[25]}}</option><option  value="?l=ro">{{languages[26]}}</option><option  value="?l=sq">{{languages[27]}}</option><option  value="?l=sk">{{languages[28]}}</option><option  value="?l=sl">{{languages[29]}}</option><option  value="?l=fi">{{languages[30]}}</option><option  value="?l=sv">{{languages[31]}}</option><option  value="?l=vi">{{languages[32]}}</option><option  value="?l=tr">{{languages[33]}}</option><option  value="?l=el">{{languages[34]}}</option><option  value="?l=bg">{{languages[35]}}</option><option  value="?l=kk">{{languages[36]}}</option><option  value="?l=mk">{{languages[37]}}</option><option  value="?l=ru">{{languages[38]}}</option><option  value="?l=sr">{{languages[39]}}</option><option  value="?l=uk">{{languages[40]}}</option><option  value="?l=he">{{languages[41]}}</option><option  value="?l=ar">{{languages[42]}}</option><option  value="?l=fa">{{languages[43]}}</option><option  value="?l=ur">{{languages[44]}}</option><option  value="?l=bn">{{languages[45]}} </option><option  value="?l=hi">{{languages[46]}}</option><option  value="?l=gu">{{languages[47]}}</option><option  value="?l=kn">{{languages[48]}}</option><option  value="?l=mr">{{languages[49]}}</option><option  value="?l=ta">{{languages[50]}}</option><option  value="?l=te">{{languages[51]}}</option><option  value="?l=ml">{{languages[52]}}</option><option  value="?l=th">{{languages[53]}}</option><option  value="?l=zh_cn">{{languages[54]}}</option><option  value="?l=zh_tw">{{languages[55]}}</option><option  value="?l=ja">{{languages[56]}}</option><option  value="?l=ko">{{languages[57]}}</option></select>                        </li>
+                                                <li class="menu__item menu__item--language" >
+                                                    <select ng-model="myLanguage" ng-options="language.language for language in languages" ng-change="onChange()"></select>
+                                                        <!--<select onchange="window.location = this.options[this.selectedIndex].value;"><{{language.language}}</option>-->                        </li>
                     </ul>
                 </div>
 
@@ -426,9 +426,9 @@
 </footer>
 
 <script>
-    var open = false;
+    /*var open = false;
     var speed = 200;
-    /*function toggle_lng_menu() {
+    function toggle_lng_menu() {
         if(open) {
             $('#lng_open').slideUp(speed);
             $('.header').removeClass('is-expanded');
@@ -438,15 +438,12 @@
         }
         open = !open;
     }*/
-
     function toggle_menu() {
         $('.page-header__drawer').toggleClass('is-visible');
     }
-
     function toggle_search() {
         $('.page-subheader--search').slideToggle();
     }
-
     $(function() {
             })
 </script>
